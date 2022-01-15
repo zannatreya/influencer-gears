@@ -10,37 +10,50 @@ body{
     padding: 0;
 }
 /* header starts here  */
+
+
+/* Style the navigation bar */
 .logo {
     width: 250px;
     height: 50px;
-    /* line-height: 70px; */
-    /* text-align: center; */
     color: black;
-    /* border-radius: 50%; */
-    /* border: 2px solid white; */
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    margin: 25px;
-    /* background-color: cadetblue; */
-    padding: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-    font-size: 1.3em;
-    margin-right: 15px;
+    margin-right: 600px;
     
 }
-
-.list a:hover {
-    background-color: gray;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    background-color: #04AA6D;
+    
+  }
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
 /* header ends here  */
 main{
     display: flex;
@@ -320,11 +333,11 @@ footer p{
   @media only screen and (min-width: 600px) {
     .background {background: lightgoldenrodyellow;
     }
-    .products{
+    /* .products{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         margin-left: 70px;
-    }
+    } */
     .container{
         margin-left: 50px;
     }
