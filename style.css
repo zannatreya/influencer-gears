@@ -1,0 +1,341 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@500&display=swap');
+
+/* common styles or utilities */
+body{
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #F3F1FF; */
+    background-color: #E5E5E5;
+    margin: 0;
+    padding: 0;
+}
+/* header starts here  */
+.logo {
+    width: 250px;
+    height: 50px;
+    /* line-height: 70px; */
+    /* text-align: center; */
+    color: black;
+    /* border-radius: 50%; */
+    /* border: 2px solid white; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+    /* background-color: cadetblue; */
+    padding: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    margin-right: 15px;
+    
+}
+
+.list a:hover {
+    background-color: gray;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+/* header ends here  */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    }
+.background{
+background-color: #FFFFFF;
+}
+.container{
+    width: 1000px;
+    align-items: center;
+    padding: 30px;
+    display: flex;
+}
+
+h1{
+    font-size: 2em;
+}
+.half-width{
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.half-width img,map{
+    width: 80%;
+}
+.half-width img:hover{
+    transform: scale(1.2) rotate(360deg);
+    transition: transform 2s ease-in-out;
+}
+p{
+    text-align: justify;
+}
+.button{
+    font-size: 16px;
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    border-radius: 30px;
+    padding: 10px 30px;
+    border: #E5E5E5;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+}
+.title{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 26px;
+    margin-left: 15px;
+    
+}
+.product{
+    width: 329px;
+    height: 510px;
+    background-color: #FFFFFF;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    padding-top: 12px;
+    box-shadow: 10px 10px 40px;
+}
+.product img{
+    width: 300px;
+    height: 256px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-detail{
+    margin-left: 16px;
+}
+.link{
+    float: right;
+    border: none;
+    color: #E02C6D;
+    font-size: 15px;
+    font-weight: 700;
+    margin-right: 16px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+}
+
+/* contact section starts here  */
+.section-title{
+    text-align: center;
+    margin-top: 70px;
+}
+#contact-section {
+    padding: 1%;
+    background: #FFFFFF;
+    
+}
+.contact-section{
+    display: flex;
+}
+.contact-details {
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.map {
+    width: 100%;
+    height: 100%;
+}
+.contact-details p,
+address {
+    font-size: 0.8rem;
+}
+  
+div#contact{
+    width: 50%;
+}
+
+div.contact-container{
+    width: 100%;
+    margin: auto;
+    background: cadetblue;
+    padding: 5px;
+    color: white;
+    
+}
+form div{
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+form .left{
+    width: 20%;
+    float: left;
+    text-align: left;
+}
+form .right{
+    width: 80%;
+    float: left;
+    text-align: left;
+    padding-left: 5px;
+    position: relative;
+}
+
+form div::after{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+input,textarea{
+    width: 80%;
+    padding: 3px;
+    padding-left: 20px;
+    border-radius: 5px;
+    
+    
+}
+input:focus, textarea:focus{
+    width: 90%;   
+}
+textarea{
+    resize: none;
+}
+ 
+button.contact-button{
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    background: #34495e;
+    color: white;
+}
+button.contact-button::before{
+   content: '';
+   height: 100%;
+   width: 0;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: #000;  
+   border: none;
+   border-radius: 5px;
+   transition: .5s;
+   z-index: -1;
+}
+
+button.contact-button:hover::before{
+    width: 100%;
+    
+}
+
+section#contact::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+/* contact section ends here  */
+
+footer{
+    background-color: #0A0826;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+}
+footer p{
+    text-align: center;
+}
+.social-media{
+    /* background-color: gray; */
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.btn{
+    border:none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    /* font-size: 2rem;  */
+}
+
+/* for responsive  */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .background {background: lightgrey;}
+    
+    .list{
+        flex-direction: column;
+        /* float: none; */
+        width: 100%;
+    }
+    .container{
+        flex-direction: column;
+        /* margin-left: 20px; */
+        /* padding: 30px; */
+        width: 100%;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 70px;
+    }
+    .contact-section{
+        flex-direction: column;
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 100%;
+        padding: 10px;
+    
+    }
+    div.contact-container{
+        width: 100%;
+        padding: 90px;
+        }
+        .map{
+            width: 100%;
+            height: 100%;
+            padding: 80px;
+        }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .background {background: lightgoldenrodyellow;
+    }
+   
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .background {background: lightsteelblue;}
+    
+
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .background {background: lightskyblue;}
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .background {background: lightcyan;}
+  }
